@@ -1,0 +1,15 @@
+// Show current date and time in Groovy
+
+// Import required class
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
+
+// Get current time
+def now = LocalDateTime.now()
+
+// Format the time
+def formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")
+def formatted = now.format(formatter)
+
+// Print the current time
+println "Current time: ${formatted}"
